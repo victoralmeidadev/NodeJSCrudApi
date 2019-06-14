@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 
 //iniciando o DB
-mongoose.connect('mongodb://localhost:27017/nodeapi', { useNewUrlParser: true })
+mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true })
 requireDir('./src/models');
 
 //Rotas
