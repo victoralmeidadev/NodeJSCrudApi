@@ -1,18 +1,12 @@
 const mongoose = require("mongoose");
 
 const AcervoSchema = new mongoose.Schema({
-  nomeLivro: {
-    type: String,
+  nomeLivro: String,
 
-  },
-  autorLivro: {
-    type: String,
+  autorLivro: String,
 
-  },
-  sinopseLivro: {
-    type: String,
+  sinopseLivro: String,
 
-  },
   createdAt: {
     type: Date,
     default: Date.now
